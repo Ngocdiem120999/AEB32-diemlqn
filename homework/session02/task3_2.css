@@ -1,0 +1,37 @@
+* {
+    font-family: "Open Sans",sans-serif;
+}
+body {
+    margin-left: 350px;
+    margin-right: 350px ;
+}
+h1 {
+    border-bottom: 2px solid rgb(124, 81, 0);
+    padding-bottom: 16px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+img {
+    margin: 0;
+    max-width: 100%;
+}
+
+.sub_img {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+p, strong {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 14px;
+}
+
+a {color: rgb(173, 109, 31);
+    text-decoration: none;
+}
+
+.end {font-style: italic;}
+

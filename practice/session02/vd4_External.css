@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+  }
+  .parent {
+    display: flex;
+  }
+  .left {
+    background-color: red;
+    color: blue;
+    flex: 0.5;
+  }
+  .right {
+    background-color: blue;
+    color: red;
+    flex: 0.5;
+  }
