@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block ui 1</title>
+    <style>
+      .div_parent {
+        height: 100px;
+        display: flex;
+        margin: 30px;
+      }
+
+      .div_left {
+        flex: 0.3;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: right;
+        padding-right: 30px;
+        font-size: 25px;
+      }
+
+      .div_right {
+        background-color: rgb(247, 246, 246);
+        flex: 0.7;
+        display: flex;
+      }
+
+      .div_percent {
+        font-size: 25px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }
+
+      .left_col_1 {
+        background-color: rgb(156, 26, 26);
+      }
+
+      .left_col_2 {
+        background-color: rgb(56, 164, 164);
+      }
+
+      .left_col_3 {
+        background-color: rgb(37, 136, 37);
+      }
+
+      .left_col_4 {
+        background-color: rgb(201, 201, 40);
+      }
+
+      .left_col_5 {
+        background-color: rgb(166, 43, 166);
+      }
+
+      .left_col_6 {
+        background-color: rgb(159, 98, 153);
+      }
+
+      .left_col_7 {
+        background-color: rgb(54, 54, 156);
+      }
+
+      .percent_col_1 {
+        background-color: rgb(199, 72, 72);
+        flex: 0.25;
+      }
+
+      .percent_col_2 {
+        background-color: rgb(141, 210, 210);
+        flex: 0.5;
+      }
+
+      .percent_col_3 {
+        background-color: rgb(84, 165, 84);
+        flex: 0.7;
+      }
+
+      .percent_col_4 {
+        background-color: rgb(200, 200, 129);
+        flex: 0.3;
+      }
+
+      .percent_col_5 {
+        background-color: rgb(188, 121, 188);
+        flex: 0.45;
+      }
+
+      .percent_col_6 {
+        background-color: rgb(255, 192, 218);
+        flex: 0.8;
+      }
+
+      .percent_col_7 {
+        background-color: rgb(118, 118, 202);
+        flex: 0.37;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div_parent">
+      <div class="div_left left_col_1">BANDWIDTH</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_1">20%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_2">STORAGE</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_2">50%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_3">USERS</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_3">70%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_4">VISITORS</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_4">30%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_5">EMAILS</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_5">45%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_6">BASIC</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_6">80%</div>
+      </div>
+    </div>
+
+    <div class="div_parent">
+      <div class="div_left left_col_7">OTHERS</div>
+      <div class="div_right">
+        <div class="div_percent percent_col_7">37%</div>
+      </div>
+    </div>
+  </body>
+</html>
