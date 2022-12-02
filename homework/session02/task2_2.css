@@ -1,4 +1,4 @@
-body {margin-left: 100px;margin-right: 100px;}
+body {margin-left: 10%;margin-right: 10%;}
 h1 {
     text-align: center;
     color: #AE1A1F;
@@ -16,7 +16,7 @@ li {
     text-align: justify;
 }
 
-ul {list-style-type: none;}
+ul {list-style-type: circle;}
 
 .blue {
     color: blue;
