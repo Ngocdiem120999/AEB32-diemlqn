@@ -28,3 +28,8 @@ Align-item là căn giữa trục y, justify-content là căn giữa trục x
 Không đặt tên class, id trùng với tên tag name
 Display: flex --->flex-direction mặc định là row nên nó sẽ hiện hàng ngang nên sửa lại là col
 Object-fit: cover/ fill/ contain/ none/ scale-down để hình chỉ chỉnh kích thước nhưng không bị sai form
+
+#Session3-2
+Để sử dụng Boostrap, truy cập vào getboostrap.com, vào Doc -> Getting started (Introduction) -> Quick start -> cop link css gắn vào header, cop 2 link JS gắn vào Body và sử dụng.
+vd: .col-sm-4 là cột này gồm 4 cột
+ps-2 là (padding star) padding left, t là top, e (padding end) padding right, b là bottom, x là right và left, y là top và bottom
