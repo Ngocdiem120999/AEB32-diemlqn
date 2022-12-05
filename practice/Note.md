@@ -26,5 +26,5 @@ thẻ body mặc định là có margin nên mình phải cài lại là margin 
 Phần body chỉ nên dùng để reset các thuộc tính như margin, padding,... các thuộc tính khác nên code và các element đó
 Align-item là căn giữa trục y, justify-content là căn giữa trục x
 Không đặt tên class, id trùng với tên tag name
-display: flex --->flex-direction mặc định là row nên nó sẽ hiện hàng ngang nên sửa lại là col
-xem lại dùng gì đó để không bể hình
+Display: flex --->flex-direction mặc định là row nên nó sẽ hiện hàng ngang nên sửa lại là col
+Object-fit: cover/ fill/ contain/ none/ scale-down để hình chỉ chỉnh kích thước nhưng không bị sai form

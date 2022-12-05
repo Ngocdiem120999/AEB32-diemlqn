@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block ui 2</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .text-center {
+        display: flex;
+        align-items: center;
+      }
+      .container {
+        max-width: 490px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgb(228, 228, 228);
+      }
+
+      .content {
+        border: 1px solid #ccc;
+      }
+
+      /* .image-cover img {
+        width: 100%;
+      } */
+
+      .image-avatar img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: auto;
+        padding: 24px;
+      }
+
+      .image-avatar {
+        display: flex;
+        background-image: url(https://media.urbanistnetwork.com/saigoneer/article-images/2020/04/06/dmh/dmh0b.jpg);
+        background-size: cover;
+        height: 295px;
+      }
+
+      .text-name {
+        display: inline-block;
+        margin: auto 0 45px 0;
+        color: rgb(255, 255, 255);
+      }
+
+      .row {
+        color: rgb(113, 93, 93);
+        background-color: #fff;
+        padding: 15px;
+        display: flex;
+        text-align: center;
+        border-top: 1px solid #ccc;
+      }
+
+      .content_row1 {
+        border-top: none;
+      }
+
+      .number {
+        padding: 5px;
+        width: 50px;
+        text-align: center;
+        margin-left: auto;
+        border-radius: 6px;
+        color: #fff;
+      }
+      .row_number1 {
+        background-color: rgb(210, 112, 112);
+      }
+
+      .row_number2 {
+        background-color: rgb(147, 204, 221);
+      }
+
+      .row_number3 {
+        background-color: rgb(105, 217, 110);
+      }
+
+      .row_number4 {
+        background-color: rgb(234, 227, 107);
+      }
+
+      .row_number5 {
+        background-color: rgb(215, 118, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <div class="image-cover">
+          <!-- <img
+            src="https://media.urbanistnetwork.com/saigoneer/article-images/2020/04/06/dmh/dmh0b.jpg"
+            alt="Ảnh bìa"
+          /> -->
+        </div>
+        <div class="image-avatar">
+          <img
+            src="https://image2.tin247.news/pictures/2022/04/27/syj1651043556.jpg"
+            alt="Ảnh avatar"
+          />
+
+          <div class="text-name">
+            <h1 style="margin: 0">Kwon Ji Yong</h1>
+            <p style="margin: 8px 0">Web Designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="row content_row1">
+          <div class="row_text1 text-center">FOLLOWERS</div>
+          <div class="number row_number1">1,200</div>
+        </div>
+        <div class="row content_row2">
+          <div class="row_text2 text-center">FOLLOWINGS</div>
+          <div class="number row_number2">1,200</div>
+        </div>
+        <div class="row content_row3">
+          <div class="row_text3 text-center">MESSAGES</div>
+          <div class="number row_number3">1,200</div>
+        </div>
+        <div class="row content_row4">
+          <div class="row_text4 text-center">LIKES</div>
+          <div class="number row_number4">1,200</div>
+        </div>
+        <div class="row content_row5">
+          <div class="row_text5 text-center">COMMENTS</div>
+          <div class="number row_number5">1,200</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

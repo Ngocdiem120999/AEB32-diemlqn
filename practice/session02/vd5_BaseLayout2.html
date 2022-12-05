@@ -4,40 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Base Layout 2</title>
     <style>
-      * {
-        text-align: center;
-      }
-      header {
-        height: 140px;
+      body {
+        margin: 0;
       }
       .container {
         display: flex;
-        height: 450px;
+        flex-direction: column;
+        height: 98vh;
+      }
+
+      header,
+      footer,
+      .sidebar,
+      .content {
+        height: 100px;
+        color: #fff;
+        background-color: cadetblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+      }
+      .center {
+        display: flex;
+        flex: 1;
+        margin: 10px 0;
       }
       .sidebar {
         flex: 0.3;
+        height: 100%;
+        margin-right: 10px;
       }
       .content {
         flex: 0.7;
+        height: 100%;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Header</h1>
-    </header>
     <div class="container">
-      <div class="sidebar">
-        <h1>Sidebar</h1>
+      <header>Header</header>
+      <div class="center">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
       </div>
-      <div class="content">
-        <h1>Content</h1>
-      </div>
+      <footer>Footer</footer>
     </div>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
   </body>
 </html>

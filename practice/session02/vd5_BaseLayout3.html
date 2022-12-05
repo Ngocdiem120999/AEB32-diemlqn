@@ -4,43 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Base Layout 3</title>
     <style>
-      * {
-        text-align: center;
+      body {
+        margin: 0;
       }
       .container {
-        display: flex; height: 200px;
+        height: 98vh;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
       }
+      header,
+      nav,
+      footer,
+      .left,
+      .center,
+      .right {
+        display: flex;
+        height: 50px;
+        border: 2px solid #000;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: green;
+      }
+      nav,
+      footer {
+        margin-top: 5px;
+      }
+      .content {
+        display: flex;
+        flex: 1;
+        margin-top: 5px;
+      }
+
       .left,
       .right {
-        flex: 0.2;
+        width: 20%;
+        height: 99%;
       }
       .center {
-        flex: 0.6;
+        width: 60%;
+        height: 99%;
+        margin: 0 5px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Header</h1>
-    </header>
-    <nav>
-      <h1>Navigation Menu</h1>
-    </nav>
     <div class="container">
-      <div class="left">
-        <h1>Content 1</h1>
+      <header>Header</header>
+      <nav>Navigation Menu</nav>
+      <div class="content">
+        <div class="left">Content 1</div>
+        <div class="center">Main Content</div>
+        <div class="right">Content 2</div>
       </div>
-      <div class="center">
-        <h1>Main Content</h1>
-      </div>
-      <div class="right">
-        <h1>Content 2</h1>
-      </div>
+      <footer>Footer</footer>
     </div>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
   </body>
 </html>

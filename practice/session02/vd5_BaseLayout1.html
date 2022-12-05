@@ -4,52 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Base Layout 1</title>
     <style>
-      * {
-        text-align: center;
+      body {
+        margin: 0;
       }
       .container {
         display: flex;
+        flex-direction: column;
+        height: 98vh;
+        padding: 5px;
+        background-color: #ccc;
+      }
+      header,
+      nav,
+      footer,
+      section,
+      article,
+      aside {
+        display: flex;
+        height: 50px;
+        border: 1px solid;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+      nav,
+      footer,
+      .content,
+      article {
+        margin-top: 5px;
+      }
+      .content {
+        display: flex;
+        flex: 1;
       }
       .left {
-        flex: 0.7;
+        margin-right: 5px;
       }
+      .left,
       .right {
-        flex: 0.3;
+        flex: 0.5;
       }
       section {
-        height: 100px;
+        height: 50%;
       }
       article {
-        height: 100px;
+        height: 48%;
+      }
+
+      aside {
+        height: 100%;
       }
     </style>
   </head>
   <body>
-    <header style="border: 2px solid #000;">
-      <h1>Header</h1>
-    </header>
-    <nav style="border: 2px solid #000;">
-      <h1>Nav</h1>
-    </nav>
     <div class="container">
-      <div class="left">
-        <section style="border: 2px solid #000;" >
-          <h1>Section</h1>
-        </section>
-        <article style="border: 2px solid #000;">
-          <h1>Article</h1>
-        </article>
+      <header>&#60;Header&#62;</header>
+      <nav>&#60;Nav&#62;</nav>
+      <div class="content">
+        <div class="left">
+          <section>&#60;Section&#62;</section>
+          <article>&#60;Article&#62;</article>
+        </div>
+        <div class="right">
+          <aside>&#60;Aside&#62;</aside>
+        </div>
       </div>
-      <div class="right" style="border: 2px solid #000;">
-        <aside>
-          <h1>Aside</h1>
-        </aside>
-      </div>
+      <footer>&#60;Footer&#62;</footer>
     </div>
-    <footer style="border: 2px solid #000;">
-      <h1>Footer</h1>
-    </footer>
   </body>
 </html>
