@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block UI 8</title>
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css" />
+    <style>
+      .red {
+        background-color: rgb(236, 82, 82);
+      }
+      .green {
+        background-color: rgb(75, 192, 75);
+      }
+      .blue {
+        background-color: rgb(117, 156, 228);
+      }
+      .yellow {
+        background-color: rgb(221, 221, 27);
+      }
+      .purple {
+        background-color: rgb(183, 70, 183);
+      }
+      body {
+        margin: 0;
+        background-color: rgb(212, 239, 255);
+      }
+      .container {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #ccc;
+        border-radius: 10px;
+        padding: 1px 50px;
+        margin: 30px;
+      }
+      .row {
+        display: flex;
+        margin: 50px 0;
+      }
+      .icon {
+        flex: 0.08;
+        font-size: 30px;
+      }
+      .icon i {
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .text {
+        flex: 0.12;
+        font-family: sans-serif;
+        text-align: justify;
+        margin: auto 0;
+        color: rgb(94, 94, 94);
+        font-weight: 600;
+      }
+
+      .box {
+        flex: 0.8;
+        width: 100%;
+        height: 15px;
+        background-color: #ccc;
+        margin: auto 0;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="icon">
+          <i class="ti-html5 green"></i>
+        </div>
+        <div class="text">HTML</div>
+        <div class="box">
+          <div class="percent green" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon">
+          <i class="ti-css3 red"></i>
+        </div>
+        <div class="text">CSS</div>
+        <div class="box">
+          <div class="percent red" style="width: 50%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon">
+          <i class="ti-dropbox-alt blue"></i>
+        </div>
+        <div class="text">PHP</div>
+
+        <div class="box">
+          <div class="percent blue" style="width: 30%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon">
+          <i class="ti-apple yellow"></i>
+        </div>
+        <div class="text">Java</div>
+
+        <div class="box">
+          <div class="percent yellow" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon">
+          <i class="ti-drupal purple"></i>
+        </div>
+        <div class="text">.Net</div>
+
+        <div class="box">
+          <div class="percent purple" style="width: 40%"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
