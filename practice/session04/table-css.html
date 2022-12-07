@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table CSS</title>
+    <style>
+      td,
+      th,
+      table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      td, th {
+        height: 50px;
+      }
+      tr:nth-child(odd) {
+        background-color: aquamarine;
+      }
+      /* dùng tr:nth-child(odd) dùng để css vào hàng lẻ child là hàng chẵn*/
+    </style>
+  </head>
+  <body>
+    <div class="lop">
+      <table>
+        <thead>
+          <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            <th>Heading 4</th>
+            <th>Heading 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>col</td>
+            <td>col</td>
+            <td>col</td>
+            <td><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>col</td>
+            <td>col</td>
+            <td>col</td>
+            <td><button>Delete</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>col</td>
+            <td>col</td>
+            <td>col</td>
+            <td><button>Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

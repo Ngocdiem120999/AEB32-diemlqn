@@ -1,0 +1,16 @@
+body {
+    margin: 10px;
+  }
+
+  header {
+    text-align: justify;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    margin-bottom: 35px;
+  }
+
+  footer {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
