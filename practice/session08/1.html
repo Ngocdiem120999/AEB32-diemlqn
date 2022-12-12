@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function bt1() {
+        let x = prompt('Nhập số nguyên x')
+        console.log(x * 2)    
+    }
+    function bt2() {
+       let input = prompt ("Nhập số vào đây (cách nhau bằng ',')")
+       let ar = input.split(',')
+       let min = parseInt(ar[0])
+       if(parseInt(ar[1]) < parseInt(min)) {min = parseInt(ar[1]);}
+       if(parseInt(ar[2]) < parseInt(min)) {min = parseInt(ar[2]);}
+       if(parseInt(ar[3]) < parseInt(min)) {min = parseInt(ar[3]);}
+        console.log(min)  
+    }
+    function bt3() {
+        let n = prompt('nhập để ra số nguyên dương nhỏ hơn hoặc bằng (n-1)/2')
+        console.log(parseInt((n-1)/2))
+        // hoặc có thể dùng Math.floor
+    }
+    function bt4() {
+        let n = prompt('Nhập số in ra chữ số hàng chục và hàng đơn vị')
+        let number = n.split('')
+        let number1 = parseInt(number[0])
+        let number2 = parseInt(number[1])
+        console.log(number1)
+        console.log(number2)
+    }
+    /**let n = prompt('Nhập số in ra chữ số hàng chục và hàng đơn vị')
+        console.log(parseInt(n/10))
+        console.log(n%10)
+     * 
+     */
+    
+    function bt5() {
+        let n = prompt('')
+
+    }
+    // let number_min = promt ('Nhập số thứ nhất:');
+    // let b = promt ('Nhập số thứ hai:');
+    // let c = promt ('Nhập số thứ ba:');
+    // let d = promt ('Nhập số thứ tư:');
+    // if (parseInt(b)<parseInt(number_min)) number_min=b
+    // if (parseInt(c)<parseInt(number_min)) number_min=c
+    // if (parseInt(d)<parseInt(number_min)) number_min=d
+    // console.log(number_min)
+    
+    
+
+    bt1()
+    bt2()
+    bt3()
+    bt4()
+    bt5()
+   </script> 
+</body>
+</html>

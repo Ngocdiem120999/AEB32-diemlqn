@@ -1,6 +1,7 @@
 // hosting trong jS thực chất là hai câu lệnh
 // let num
 // num = 1
+
 // kiểu nguyên thủy
 let num = 1; //số
 let str = "hello123"; //chuỗi
@@ -68,9 +69,14 @@ alert ('You select: '+ name)
 
 function handleSend() {
     let elm = document.getElementById('btn-send')
-    elm.style.color = 'red'
+    elm.style.color = 'red' // đổi màu nút bấm
     elm.textContent = 'Sent' //thay đổi nội dung trong chữ
-    // elm.style.display = 'none' //để ẩn nút bấm
+    elm.style.display = 'none' //để ẩn nút bấm
+}
+
+function handleParagraph() {
+    let elm = document.getElementById('content')
+    elm.innerHTML = '<span>ABC</span>'
 }
 
 

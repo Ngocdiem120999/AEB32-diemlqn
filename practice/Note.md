@@ -33,3 +33,14 @@ Object-fit: cover/ fill/ contain/ none/ scale-down để hình chỉ chỉnh kí
 Để sử dụng Boostrap, truy cập vào getboostrap.com, vào Doc -> Getting started (Introduction) -> Quick start -> cop link css gắn vào header, cop 2 link JS gắn vào Body và sử dụng.
 vd: .col-sm-4 là cột này gồm 4 cột
 ps-2 là (padding star) padding left, t là top, e (padding end) padding right, b là bottom, x là right và left, y là top và bottom
+
+#Session7
+Condition rendering
+var x = 1
+x && console.log('Day la so 1') ---> Day la so 1
+x === y
+switch-case, case phải bằng giá trị
+parseInt() chuyển đổi sang number
+split() cắt chuỗi thành mảng Array 
+join() nối mảng thành string
+
