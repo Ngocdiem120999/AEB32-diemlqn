@@ -67,7 +67,21 @@
         if (flag == false) {console.log('NO')}
         else {console.log('YES')}
       }*/
-      function bt9() {
+      function bt6() {
+        let n = prompt("nhập số lớn nhất");
+        let m = prompt("nhập số nhỏ nhất");
+        if (n % m === 0) {
+          console.log(m + " là ước chung lớn nhất");
+        } else {
+          for (let i = m; i >= 0; i--) {
+            if (n % i === 0 && m % i === 0) {
+              console.log(i + " là ước chung lớn nhất");
+              break;
+            }
+          }
+        }
+      }
+      /*function bt9() {
         let n = prompt('Nhập số N để thành thừa số nguyên và đếm ước số của nó')
       
         if (n == 1) {
@@ -76,23 +90,21 @@
           let myString = ' ';
           for (let i = 2; i <= n;) {
             if (n % i == 0) {n = n / i;
-             
               console.log(myString += `${i} * `)}
               else {n = n/(i++); console.log(myString += `${i} * `)}
             // else {n % i == 1; n = n / i; console.log(i)}
           
           }
         }
-
         
+      }*/
 
-
-      }
       /*function bt10() {
         let n = prompt("số lít xăng");
         let a = prompt("giá mua 1L xăng");
         let b = prompt("giá mua 2L xăng");
         if (2 * a > b) {
+          // console.log(parseInt(n / 2) * b + [n - parseInt(n / 2)*b] * a);
           console.log(parseInt(n / 2) * b + (n % 2) * a);
         } else {
           // 2*a <= b
@@ -105,7 +117,8 @@
       // bt3();
       // bt4();
       // bt5();
-      bt9();
+      bt6();
+      // bt9();
       // bt10();
     </script>
   </body>

@@ -41,6 +41,59 @@ x && console.log('Day la so 1') ---> Day la so 1
 x === y
 switch-case, case phải bằng giá trị
 parseInt() chuyển đổi sang number
-split() cắt chuỗi thành mảng Array 
+split() cắt chuỗi thành mảng Array, vd: let ar = input.split(',')
 join() nối mảng thành string
 
+#Session9
+split() cắt chuỗi thành mảng Array, vd: let ar = input.split(',')
+lấy phần tử của mảng console.log(ar[0])
+vòng lặp For, index là số lần lặp for
+for (let index = 0; index < array.length; index++) {
+          console.log(ar[index]);
+          }
+ví dụ trên sẽ lấy được cái phần tử trong Array: a,b,c,d
+
+let element = ar[index] for each đã lượt bỏ phần này bằng element
+
+Nếu funct dùng 1 lần thì dùng : arrow function (element)=>{//Câu lệnh sẽ để đây}
+
+array.forEach(element, index) => {
+          console.log(element, index);
+        });
+
+sẽ được sử dụng nhiều trong ReactJS, ar.map sẽ tương tự như ar.forEach
+ar.map(elm) => {console.log(element)}
+
+bài tập 5:
+function checkNT(number) {
+        let isNT = true;
+          for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+              isNT = false;
+            }
+          }
+          return isNT
+        }
+         let res = checkNT()
+         console.log(res)
+ bài tập 6:
+ check số max, min
+ nếu max chia hết cho min thì min là ước chung
+ dùng for là
+ i=2; i < min/2
+ i=2; i < sqrt(min)
+ sử dụng for ngược
+ for (let index = 10; index >= 0; index--) {
+          const element = array[index]; break;
+          
+        }
+bài tập 7:
+tách string thành mảng array bằng split
+dùng forEach --> capital...
+toUpCase viết hoa slice(0,1)/ charAt(0) là lấy chữ đầu tiên
+dùng slice để lấy phần tử con vd: slice(1) sẽ lấy tất cả phần sau.toLowerCase
+
+bài tập 7: dùng string.length
+dùng .trim để xóa dấu cách cuối và đầu
+
+bài tập đếm k trong mảng, trước tiên phải làm tam giác vuông và tam giác đều

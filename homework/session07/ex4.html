@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tam giác cân</title>
+  </head>
+  <body>
+    <script>
+      let h = prompt("nhap so h?");
+      for (let i = 1; i <= h; i++) {
+        let str = "";
+    
+        for (let space = 0; space < i; space++) {
+          str += " ";
+        } 
+        console.log(str);}
+      for (let i = 1; i <= h; i++) {
+        let str = "";
+    
+        for (let star = 0; star < 2*i - 1; star++) {
+          str += "*";
+        } 
+        console.log(str);}
+//       -> Tim sao va cach bien thien theo h = 5  va index
+// quy luật: space: h- index, star: 2*index - 1 
+//     *           -> index = 1 : cach = 4 : sao = 1
+//    ***          -> index = 2 : cach = 3 : sao = 3
+//   *****         -> index = 3 : cach = 2 : sao = 5
+//  *******        -> index = 4 : cach = 1 : sao = 7
+// *********       -> index = 5 : cach = 0 : sao = 9
+    </script>
+  </body>
+</html>
