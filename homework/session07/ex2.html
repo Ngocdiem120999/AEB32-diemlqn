@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 07-02</title>
+  </head>
+  <body>
+    <input type="number" id="num" value="" />
+    <button onclick="confirmCheck()" id="check">Check</button>
+    <h1 id="result">Kết quả hiện thị ở đây</h1>
+    <script>
+      function confirmCheck() {
+        let n = parseInt(document.getElementById("num").value);
+
+        for (let i = 0; i < n; i++) {
+          let n2 = 1;
+          let nextTerm = i;
+          i = n2;
+          n2 = nextTerm + i;
+        }
+      }
+     
+      confirmCheck()
+    </script>
+  </body>
+</html>

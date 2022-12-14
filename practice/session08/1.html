@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-   <script>
-    function bt1() {
-        let x = prompt('Nhập số nguyên x')
-        console.log(x * 2)    
-    }
-    function bt2() {
-       let input = prompt ("Nhập số vào đây (cách nhau bằng ',')")
-       let ar = input.split(',')
-       let min = parseInt(ar[0])
-       if(parseInt(ar[1]) < parseInt(min)) {min = parseInt(ar[1]);}
-       if(parseInt(ar[2]) < parseInt(min)) {min = parseInt(ar[2]);}
-       if(parseInt(ar[3]) < parseInt(min)) {min = parseInt(ar[3]);}
-        console.log(min)  
-    }
-    function bt3() {
-        let n = prompt('nhập để ra số nguyên dương nhỏ hơn hoặc bằng (n-1)/2')
-        console.log(parseInt((n-1)/2))
+  </head>
+  <body>
+    <script>
+      /*function bt1() {
+        let x = prompt("Nhập số nguyên x");
+        console.log(x * 2);
+      }
+      function bt2() {
+        let input = prompt("Nhập số vào đây (cách nhau bằng ',')");
+        let ar = input.split(",");
+        let min = parseInt(ar[0]);
+        if (parseInt(ar[1]) < parseInt(min)) {
+          min = parseInt(ar[1]);
+        }
+        if (parseInt(ar[2]) < parseInt(min)) {
+          min = parseInt(ar[2]);
+        }
+        if (parseInt(ar[3]) < parseInt(min)) {
+          min = parseInt(ar[3]);
+        }
+        console.log(min);
+      }
+      // let number_min = promt ('Nhập số thứ nhất:');
+      // let b = promt ('Nhập số thứ hai:');
+      // let c = promt ('Nhập số thứ ba:');
+      // let d = promt ('Nhập số thứ tư:');
+      // if (parseInt(b)<parseInt(number_min)) number_min=b
+      // if (parseInt(c)<parseInt(number_min)) number_min=c
+      // if (parseInt(d)<parseInt(number_min)) number_min=d
+      // console.log(number_min)
+
+      function bt3() {
+        let n = prompt("nhập để ra số nguyên dương nhỏ hơn hoặc bằng (n-1)/2");
+        console.log(parseInt((n - 1) / 2));
         // hoặc có thể dùng Math.floor
-    }
-    function bt4() {
-        let n = prompt('Nhập số in ra chữ số hàng chục và hàng đơn vị')
-        let number = n.split('')
-        let number1 = parseInt(number[0])
-        let number2 = parseInt(number[1])
-        console.log(number1)
-        console.log(number2)
-    }
-    /**let n = prompt('Nhập số in ra chữ số hàng chục và hàng đơn vị')
+      }
+      function bt4() {
+        let n = prompt("Nhập số in ra chữ số hàng chục và hàng đơn vị");
+        let number = n.split("");
+        console.log(parseInt(number[0]));
+        console.log(parseInt(number[1]));
+      }*/
+      /**let n = prompt('Nhập số in ra chữ số hàng chục và hàng đơn vị')
         console.log(parseInt(n/10))
-        console.log(n%10)
-     * 
-     */
-    
-    function bt5() {
-        let n = prompt('')
+        console.log(n % 10)
+        
+      function bt5() {
+        let n = prompt("Nhập xem n có phải là nguyên tố hay không?");
+        let flag = true;
+        if (n < 2) {
+          flag = false;
+        } else {
+          for (let i = 2; i < n - 1; i++) {
+            if (n % i === 0) {
+              flag = false;
+              break;
+            }
+          }
+        }
+        if (flag == false) {console.log('NO')}
+        else {console.log('YES')}
+      }*/
+      function bt9() {
+        let n = prompt('Nhập số N để thành thừa số nguyên và đếm ước số của nó')
+      
+        if (n == 1) {
+          console.log(n)
+        } else {
+          let myString = ' ';
+          for (let i = 2; i <= n;) {
+            if (n % i == 0) {n = n / i;
+             
+              console.log(myString += `${i} * `)}
+              else {n = n/(i++); console.log(myString += `${i} * `)}
+            // else {n % i == 1; n = n / i; console.log(i)}
+          
+          }
+        }
 
-    }
-    // let number_min = promt ('Nhập số thứ nhất:');
-    // let b = promt ('Nhập số thứ hai:');
-    // let c = promt ('Nhập số thứ ba:');
-    // let d = promt ('Nhập số thứ tư:');
-    // if (parseInt(b)<parseInt(number_min)) number_min=b
-    // if (parseInt(c)<parseInt(number_min)) number_min=c
-    // if (parseInt(d)<parseInt(number_min)) number_min=d
-    // console.log(number_min)
-    
-    
+        
 
-    bt1()
-    bt2()
-    bt3()
-    bt4()
-    bt5()
-   </script> 
-</body>
+
+      }
+      /*function bt10() {
+        let n = prompt("số lít xăng");
+        let a = prompt("giá mua 1L xăng");
+        let b = prompt("giá mua 2L xăng");
+        if (2 * a > b) {
+          console.log(parseInt(n / 2) * b + (n % 2) * a);
+        } else {
+          // 2*a <= b
+          console.log(n * a);
+        }
+      }*/
+
+      // bt1();
+      // bt2();
+      // bt3();
+      // bt4();
+      // bt5();
+      bt9();
+      // bt10();
+    </script>
+  </body>
 </html>

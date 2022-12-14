@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 07-01</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="num" value="" />
+      <button onclick="confirmCheck()" id="check">Check</button>
+    </div>
+    <script>
+      function confirmCheck() {
+        let n = parseInt(document.getElementById("num").value);
+        if (n % 2 === 0) {
+          checkNumber = alert(n + " là số chẵn");
+        } else {
+          checkNumber = alert(n + " là số lẻ");
+        }
+      }
+      confirmCheck();
+    </script>
+  </body>
+</html>
