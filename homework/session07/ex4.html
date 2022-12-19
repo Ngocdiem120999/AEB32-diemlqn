@@ -12,16 +12,17 @@
       for (let i = 1; i <= h; i++) {
         let str = "";
     
-        for (let space = 0; space < i; space++) {
-          str += " ";
-        } 
-        console.log(str);}
-      for (let i = 1; i <= h; i++) {
-        let str = "";
-    
         for (let star = 0; star < 2*i - 1; star++) {
           str += "*";
         } 
+        console.log(str);}
+        for (let i = 1; i <= h; i++) {
+          let str = "";
+          
+          for (let space = 0; space < i; space++) {
+            str += " ";
+          } 
+          
         console.log(str);}
 //       -> Tim sao va cach bien thien theo h = 5  va index
 // quy luật: space: h- index, star: 2*index - 1 
